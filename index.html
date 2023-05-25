@@ -10,9 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body class="bg-body text-white font-poppins pb-12">
+
+    <!-- Seção da Navbar -->
+
     <header class="w-full fixed top-0 z-10 bg-[#1b1b1F]">
         <nav class="container flex justify-between items-center mx-auto py-2 px-8 md:px-15 w-full font-bold">
             <div class="text-2xl xl:text-4xl">Augusto.</div>
@@ -31,6 +35,8 @@
             </div>
         </nav>
     </header>
+
+    <!-- Seção 'Hero' -->
 
     <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <div class="flex flex-wrap md:flex-nowrap">
@@ -74,38 +80,60 @@
                 class="max-h-[1200px] mx-auto w-3/4 mt-12 md:absolute md:mt-0 xl:w-2/4 xl:left-[40%] -z-1">
         </div>
     </div>
-    <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+
+    <!-- Seção de projetos -->
+
+    <div
+        class="container mt-10 md:mt-30 xl:mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <section class="w-full">
             <h2 id="projetos" class="secondary-title">Meus projetos</h2>
             <p class="section-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quos libero
                 maiores, numquam ipsum sit dolorum facere. Quisquam corporis delectus quibusdam vel cumque. Voluptate,
-                libero voluptatem. Doloremque, vero culpa. Placeat.</p>
+            </p>
+            <div class="max-w-[1000px] relative m-auto">
+                <div class="mySlides fade">
+                    <div class="text-[#f2f2f2] absolute top-0 px-[8px] py-[12px] text-md">1 / 3</div>
+                    <img src="./img/projetos-img/financeiro-img.png" class="w-full">
+                    <div class="w-full flex items-center justify-center">
+                        <button
+                            class="absolute bg-theme/70 text-white font-semibold text-md md:text-lg xl:text-xl p-5 rounded-lg hover:bg-theme mb-[10rem]">
+                            <a target="_blank" href="https://augustola.github.io/ProjetoFinanceiro/">Visite o
+                                projeto</a></button>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class=" absolute top-0 px-[8px] py-[12px] text-md">2 / 3</div>
+                    <img src="./img/projetos-img/calculadora-img.png" class="w-full">
+                    <div class="w-full flex items-center justify-center">
+                        <button
+                            class="absolute bg-theme/70 text-white font-semibold text-md md:text-lg xl:text-xl p-5 rounded-lg hover:bg-theme mb-[10rem]">
+                            <a target="_blank" href="https://augustola.github.io/Calculadora-React/">Visite o
+                                projeto</a></button>
+                    </div>
+                </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-                <img src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                    class="w-full bg-nav h-36 lg:h-72 object-cover">
-                <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                    class="w-full bg-nav h-36 lg:h-72 object-cover">
-                <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
-                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80"
-                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                <img src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
-                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                <img src="https://images.unsplash.com/photo-1603969072881-b0fc7f3d77d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80s"
-                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-                <img src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
-                    class="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover">
+                <div class="mySlides fade">
+                    <div class="text-[#f2f2f2] absolute top-0 px-[8px] py-[12px] text-md">3 / 3</div>
+                    <img src="./img/projetos-img/mentorly-img.png" class="w-full">
+                    <div class="w-full flex items-center justify-center">
+                        <button
+                            class="absolute bg-theme/70 text-white font-semibold text-md md:text-lg xl:text-xl p-5 rounded-lg hover:bg-theme mb-[10rem]">
+                            <a target="_blank" href="https://github.com/Gharibim/mentorly">Visite o projeto</a></button>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </section>
     </div>
-
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>
